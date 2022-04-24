@@ -1,0 +1,36 @@
+@import "../../../styles/variable";
+.contact{
+  margin-top: 120px;
+  background-image: url("./img/form.bg.png");
+  background-size: cover;
+  font-family: 'Gotham';
+  height: 564px;
+  color: $base-color;
+  margin-bottom: 710px;
+  @media screen and (max-width: 390px){
+    background-image: url("./img/contact.smal.bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 80px;
+  }
+  .contact_text{
+    padding-bottom: 267px;
+    font-weight: 700;
+    font-size:  3.875em;
+    line-height: 110%;
+    @media screen and (max-width: 390px){
+    font-size: 1.875em;
+      line-height: 40px;
+      padding-bottom: 47px;
+    }
+  }
+  .contact_title{
+    padding: 120px 0 20px 0;
+    font-weight: 325;
+    font-size: 1.625em;
+    line-height: 123%;
+    @media screen and (max-width: 390px){
+      padding: 26px 0 20px 0;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../../styles/variable";
+.about {
+  @media screen and (max-width: 390px){
+    position: relative;
+  }
+  .about_title {
+    @media screen and (max-width: 390px){
+      position: absolute;
+      top: 80px;
+    }
+    p {
+      padding-top: 11em;
+      font-family: 'Gotham';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.625em;
+      line-height: 30px;
+      color: #35417F;
+      @media screen and (max-width: 390px){
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  .about_text {
+    @media screen and (max-width: 390px){
+      padding-top:65px;
+    }
+    h2 {
+      font-family: 'Gotham';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.875em;
+      line-height: 60px;
+      color: #03115F;
+      @media screen and (max-width: 390px){
+        padding-top: 10px;
+        font-size: 30px;
+        line-height: 32px;
+      }
+    }
+  }
+  .about_text p{
+      font-family: 'Gotham';
+      font-style: normal;
+      font-weight: 325;
+      font-size: 1.125em;
+      line-height: 22px;
+    @media screen and (max-width: 390px){
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    }
+  .about_button{
+    @media screen and (max-width: 390px){
+      text-align: right;
+      padding-top: 0;
+    }
+    padding-top: 40px;
+    .btn{
+      padding: 14px 45px;
+      font-family: 'Gotham';
+      font-style: normal;
+      font-weight: 350;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.02em;
+      @media screen and (max-width: 390px){
+        padding: 20px 15px;
+      }
+    }
+    .btn-primary{
+      margin-right: 40px;
+      @media screen and (max-width: 390px){
+        display: none;
+      }
+    }
+    .btn-secondary{
+      background-color: transparent;
+      color: $blue-color;
+      border: 1px solid $blue-color;
+      @media screen and (max-width: 390px){
+        border: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+  .about_img{
+    margin: 0 -12px 0 -12px;
+  }
+  }
+
+

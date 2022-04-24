@@ -1,0 +1,33 @@
+@import "../../../styles/variable";
+.client {
+  .react-multiple-carousel__arrow {
+    display: none;
+  }
+  .react-multi-carousel-track{
+    @media screen and (max-width: 390px){
+      margin-left: 5px;
+    }
+    .react-multi-carousel-track:first-child {
+      padding-left: 30px;
+    }
+    li{
+      padding: 0 20px 0 20px;
+    }
+  }
+
+.client_title {
+    padding: 180px 0 98px 0;
+    font-family: 'Gotham';
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.875em;
+    line-height: 110%;
+    color: $main-text;
+    @media screen and (max-width: 390px) {
+      font-size: 30px;
+      line-height: 32px;
+      padding: 57px 0 98px 0;
+    }
+  }
+
+}

@@ -15,13 +15,14 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    // <Router>
       <main className="for_page">
         <Header />
         <div className="pages">
-          <Routes>
-            <Route exact path="/" element={<Main />} />
-          </Routes>
+          {/*<Routes>*/}
+          {/*  <Route exact path="/" element={} />*/}
+          {/*</Routes>*/}
+          <Main />
           <About />
           <Offers />
           <Portfolio />
@@ -32,7 +33,7 @@ function App() {
         </div>
         <Footer />
       </main>
-    </Router>
+    {/*</Router>*/}
   );
 }
 

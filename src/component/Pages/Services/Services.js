@@ -10,6 +10,15 @@ import Services3 from "./img/info_block3.png";
 import Services4 from "./img/info_block4.png";
 import Services5 from "./img/info_block5.png";
 
+function GetCarouselItemsDescription(props) {
+  return (
+    <div className="card-block">
+      <h5>{props.title}</h5>
+      <span>{props.text}</span>
+    </div>
+  );
+}
+
 function GetCarouselItem(props) {
   if (props.direction === undefined || !props) {
     return <div />;
@@ -36,23 +45,54 @@ function GetCarouselItem(props) {
     >
       <div className="item">
         <img src={Services1} alt="client1" />
-        <h5 className="card-title">Быстрое масштабирование</h5>
+        <GetCarouselItemsDescription
+          title="Быстрое масштабирование"
+          text="Мы управляем каждым проектом так, чтобы помочь вам быстро
+            масштабировать бизнес-решения и соответствовать изменениям в
+            потребностях клиентов вне зависимости от региона, часового пояса или
+            требующейся функциональности."
+        />
       </div>
       <div className="item">
         <img src={Services2} alt="client1" />
-        <h5 className="card-title">Прозрачное взаимодействие</h5>
+        <GetCarouselItemsDescription
+          title="Прозрачное взаимодействие"
+          text="Ваши результаты — основа нашего успеха. Мы используем новейшие
+            технологии, нструменты и платформы для совместной работы, чтобы
+            гарантировать прозрачность взаимодействия и возможность
+            контролировать его из любой точки мира."
+        />
       </div>
       <div className="item">
         <img src={Services3} alt="client1" />
-        <h5 className="card-title">Смешанные команды</h5>
+        <GetCarouselItemsDescription
+          title="Смешанные команды"
+          text="Для создания цифрового опыта или продукта требуются экспертный опыт
+            и знания специалистов по различным предметным областям. Мы создаем
+            многопрофильные команды для разработки комплексных технологических
+            решений, которые помогут вам добиться необходимых результатов."
+        />
       </div>
       <div className="item">
         <img src={Services4} alt="client1" />
-        <h5 className="card-title">ПРОИЗВОДСТВО ЦИФРОВЫХ РЕШЕНИЙ</h5>
+        <GetCarouselItemsDescription
+          title="ПРОИЗВОДСТВО ЦИФРОВЫХ РЕШЕНИЙ"
+          text="Пользовательский опыт, данные, процессы, технологии: мы умеем
+            создавать из этих компонентов единую систему вне зависимости от
+            масштаба задачи и обеспечивать реальный эффект от инвестиций в
+            цифровые проекты."
+        />
       </div>
       <div className="item">
         <img src={Services5} alt="client1" />
-        <h5 className="card-title">ОТКРЫТОСТЬ</h5>
+        <GetCarouselItemsDescription
+          title="ОТКРЫТОСТЬ"
+          text="Мы используем свободное и открытое ПО и сотрудничаем с
+            ИТ-сообществами. Мы отказываемся от закрытости и применении только
+            проприетарных технологий — и получаем новые преимущества: гибкость,
+            доступ к экспериментальным идеям и возможность сотрудничества для
+            создания лучших решений."
+        />
       </div>
     </Carousel>
   );
@@ -61,7 +101,7 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 13, // optional, default to 1.
+    slidesToSlide: 3, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -117,7 +157,7 @@ class Services extends Component {
               </div>
             </Col>
             <Col xl={12} lg={12} xs={12}>
-              <div className="Services_cooperation">
+              <div className="Services_carousel">
                 <GetCarouselItem direction="true" responsive="true" />
               </div>
             </Col>

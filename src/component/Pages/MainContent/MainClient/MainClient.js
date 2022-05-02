@@ -15,6 +15,7 @@ function GetCarousel(props) {
     console.log("Invalid data. Can't process");
     return <div />;
   }
+
   return (
     <Carousel
       swipeable={true}

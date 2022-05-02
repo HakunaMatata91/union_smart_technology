@@ -45,9 +45,38 @@
       }
     }
   }
-.Services_cooperation{
-  .react-multi-carousel-track{
-    overflow: hidden;
+  .Services_cooperation{
+    padding: 183px 0 64px 0;
+    p{
+      font-weight: 325;
+      font-size: 26px;
+      line-height: 32px;
+      color: $blue-text;
+    }
+    h2{
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 68px;
+      color: $main-text;
+    }
   }
-}
+  .Services_carousel{
+    .card-block{
+      padding: 15px 65px 0 0;
+      h5{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $blue-color;
+        text-transform: uppercase;
+      }
+      span{
+        font-weight: 325;
+        font-size: 16px;
+        line-height: 22px;
+        color: #535670;
+      }
+    }
+  }
+
 }

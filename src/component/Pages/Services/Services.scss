@@ -1,0 +1,53 @@
+@import "../../../styles/variable";
+
+.Services{
+  @media screen and (min-width: 1920px) {
+    .container {
+      max-width: 1416px;
+    }
+  }
+  background-repeat: no-repeat;
+  background-position:center top;
+  padding-top: 190px;
+  margin-top: -100px;
+  font-family: 'Gotham', serif;
+
+  .Services_info{
+   p{
+     font-weight: 325;
+     font-size: 26px;
+     line-height: 32px;
+     color: #CDCFDF;
+   }
+    h2{
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 68px;
+      color: $base-color;
+    }
+    span{
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #DDDDE2;
+    }
+    .Services_button{
+      font-weight: 350;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 70px 0 80px 0;
+      a{
+        color: $base-color;
+        padding: 14px 20px;
+        background: #1E74EC;
+      }
+    }
+  }
+.Services_cooperation{
+  .react-multi-carousel-track{
+    overflow: hidden;
+  }
+}
+}

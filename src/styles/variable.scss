@@ -1,6 +1,5 @@
 $base-color: #EEEFF1;
 $nav-color: #DDDDE2;
-$link-color: red;
 $font-size: 16px;
 $blue-color: #1E74EC;
 $blue-text: #35417F;
@@ -9,9 +8,10 @@ $grey-text: #535670;;
 
 $container-max-widths: (
         xs: 390px,
-        sm: 720px,
-        md: 960px,
-        lg: 1140px,
-        ld: 1437px
-)!default;
+        sm: 540px,
+        md: 720px,
+        lg: 991px,
+        xl: 1140px,
+        xxl: 1320px,
+);
 

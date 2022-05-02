@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import "./Footer.scss";
-import linkedin from "../Pages/Contact/RegistrationForm/img/LinkedIn.svg";
-import google from "../Pages/Contact/RegistrationForm/img/Google.svg";
-import facebook from "../Pages/Contact/RegistrationForm/img/Facebook.svg";
-import dribble from "../Pages/Contact/RegistrationForm/img/Dribbble.svg";
-import instagram from "../Pages/Contact/RegistrationForm/img/Instagram.svg";
+import linkedin from "../Pages/MainContent/MainContact/RegistrationForm/img/LinkedIn.svg";
+import google from "../Pages/MainContent/MainContact/RegistrationForm/img/Google.svg";
+import facebook from "../Pages/MainContent/MainContact/RegistrationForm/img/Facebook.svg";
+import dribble from "../Pages/MainContent/MainContact/RegistrationForm/img/Dribbble.svg";
+import instagram from "../Pages/MainContent/MainContact/RegistrationForm/img/Instagram.svg";
 
 function GetCompanyAddress(props) {
   return (
@@ -30,7 +30,7 @@ class Footer extends Component {
       <div className="footer">
         <Container>
           <Row>
-            <Col lg={3} md={3} xs={6}>
+            <Col xl={3} lg={3} md={6} xs={6}>
               <GetCompanyAddress
                 name="Украинcкая команда"
                 email="contact@unionsmarttech.org"
@@ -38,7 +38,7 @@ class Footer extends Component {
                 address="24 Entuziastov stree, Ukraine, 191 119"
               />
             </Col>
-            <Col lg={3} md={3} xs={6}>
+            <Col xl={3} lg={3} md={6} xs={6}>
               <GetCompanyAddress
                 name="Словакская команда"
                 email="contact@unionsmarttech.org"
@@ -46,21 +46,20 @@ class Footer extends Component {
                 address="24 Entuziastov stree, Ukraine, 191 119"
               />
             </Col>
-            <Col lg={2} md={2} xs={12}>
+            <Col xl={3} lg={3} md={12} sm={12} xs={12}>
               <div className="footer_navigation">
                 <Nav.Link href="#action1">Главная</Nav.Link>
                 <Nav.Link href="#about">Команда</Nav.Link>
                 <Nav.Link href="#action3">Услуги</Nav.Link>
-              </div>
-            </Col>
-            <Col lg={2} md={2} xs={12}>
-              <div className="footer_navigation">
                 <Nav.Link href="#action4">Карьера</Nav.Link>
                 <Nav.Link href="#action5">Портфолио</Nav.Link>
                 <Nav.Link href="#action6">Контакты</Nav.Link>
               </div>
             </Col>
-            <Col lg={2} md={2} xs={12}>
+            {/*<Col xl={2} lg={2} md={6} sm={12} xs={6}>*/}
+            {/*  <div className="footer_navigation "></div>*/}
+            {/*</Col>*/}
+            <Col xl={3} lg={3} md={12} sm={12} xs={12}>
               <div className="footer_social">
                 <a href="https://www.linkedin.com">
                   <p>linkedin</p>
@@ -84,12 +83,12 @@ class Footer extends Component {
                 </a>
               </div>
             </Col>
-            <Col lg={6} md={6} xs={12}>
+            <Col lg={6} md={12} xs={12}>
               <div className="footer_about">
                 <span>Разработка: студия ЯР</span>
               </div>
             </Col>
-            <Col lg={6} md={6} xs={12}>
+            <Col lg={6} md={12} xs={12}>
               <div className="footer_cookies">
                 <a href="Политика конфиденциальности">
                   Политика конфиденциальности

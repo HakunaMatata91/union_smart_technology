@@ -1,0 +1,96 @@
+@import "../../../styles/variable";
+.Team{
+  @media screen and (min-width: 1920px) {
+    .container {
+      max-width: 1416px;
+    }
+  }
+  background-repeat: no-repeat;
+  background-position:center top;
+  padding-top: 100px;
+  margin-top: -100px;
+  font-family: "Gotham", sans-serif;
+  .Team_info{
+    padding:220px 0  156px 0;
+    p{
+      font-weight: 325;
+      font-size: 26px;
+      line-height: 32px;
+      color: #CDCFDF;
+    }
+    h2{
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 68px;
+      color: $base-color;
+    }
+    span{
+      font-family: 'Rubik', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: $nav-color;
+      letter-spacing: 0.2px;
+    }
+  }
+  .Team_about{
+    margin-right: 10px;
+    h2{
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 64px;
+      color: $main-text;
+      margin-top: -6px;
+    }
+    p{
+      font-weight: 325;
+      font-size: 18px;
+      line-height: 22px;
+      color: #535670;
+    }
+  }
+  .Team_group{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 78px;
+    p{
+      padding-top: 10px;
+      margin-bottom: 5px;
+      color: $main-text;
+    }
+    span{
+      font-weight: 325;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .Team_footer{
+    margin-bottom: -180px;
+    background-position: left;
+    background-repeat: no-repeat;
+
+  .footer_info{
+    padding: 348px 0 252px 0;
+    font-family: 'Gotham', sans-serif;
+    p{
+      font-weight: 325;
+      font-size: 26px;
+      line-height: 32px;
+      color: #DDDDE2;
+    }
+    h3{
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 68px;
+      color: $base-color;
+      padding-bottom: 30px;
+    }
+  }
+    .footer_button a{
+      font-size: 16px;
+      line-height: 19px;
+      padding: 16px 30px;
+    }
+  }
+}

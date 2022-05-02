@@ -1,0 +1,112 @@
+@import "../../../styles/variable";
+.Career{
+  @media screen and (min-width: 1920px) {
+    .container {
+      max-width: 1416px;
+    }
+  }
+  background-repeat: no-repeat;
+  background-position:center top;
+  padding-top: 100px;
+  margin-top: -100px;
+  .Career_info{
+    font-family: 'Gotham', sans-serif;
+    padding: 130px 0 138px 0;
+    h2{
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 68px;
+      color: $base-color;
+    }
+    p{
+      padding-top: 16px;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #DDDDE2;
+      letter-spacing: 0.2px;
+    }
+  }
+  .career_description{
+    padding: 190px 0 93px 125px;
+    font-family: 'Gotham', sans-serif;
+  }
+  h3{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+    color: $main-text;
+    padding-bottom: 20px;
+  }
+  p{
+    font-weight: 325;
+    font-size: 20px;
+    line-height: 28px;
+    color: #535670;
+  }
+  .position{
+    color: #535670;
+    padding: 0 0 80px 125px;
+    //padding-left: 125px;
+    h4{
+      font-size: 26px;
+      line-height: 32px;
+      font-weight: 325;
+    }
+    .position_description{
+      padding: 60px 0 0 120px;
+      h5{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $blue-text;
+      }
+      p{
+        font-weight: 325;
+        font-size: 16px;
+        line-height: 20px;
+        color: #989AA9;
+      }
+      ul li{
+        font-weight: 325;
+        font-size: 18px;
+        line-height: 22px;
+        list-style: outside;
+      }
+    }
+  }
+  .button{
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+  }
+  .Career_footer{
+    background-repeat: no-repeat;
+    background-position:center;
+    padding-bottom: 180px;
+  }
+  .Career_footerMain{
+    padding: 182px 0 504px;
+    position: relative;
+    p{
+      color: #E6E8EF;
+      font-weight: 325;
+      font-size: 26px;
+      line-height: 32px;
+    }
+    h3{
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 68px;
+      color: $base-color;
+    }
+    span{
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 325;
+      color: $base-color;
+    }
+  }
+}

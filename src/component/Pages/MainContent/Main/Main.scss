@@ -1,0 +1,172 @@
+@import "../../../../styles/variable";
+.main {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-top: 100px;
+  margin-top: -100px;
+  .main_block{
+    padding-top: 9.375em;
+    padding-bottom: 3.125em;
+    line-height: 1.1;
+    .main_title  {
+      font-family: 'Gotham XNarrow';
+      font-style: normal;
+      font-weight: 350;
+      font-size: 4.625em;
+      letter-spacing: 0.02em;
+      color: $base-color;
+      margin-bottom: 0;
+    }
+    .main_sub {
+      font-family: 'Gotham XNarrow';
+      font-style: normal;
+      font-weight: 350;
+      color: $blue-color;
+      font-size: 4.625em;
+      letter-spacing: 0.02em;
+    }
+    .main_subtext{
+      padding-top: 1.5em;
+      font-family: 'Gotham';
+      font-style: normal;
+      font-weight: 325;
+      font-size: 1.25em;
+      line-height: 28px;
+      color: $nav-color;
+      letter-spacing: 0.02em;
+      max-width: 29.6875em;
+    }
+
+  }
+.btn{
+  padding: 14px 20px;
+  background-color: $blue-color;
+  border-radius: 0em;
+}
+  .benefits{
+    padding: 196px 0 155px 0;
+    font-family: 'Gotham';
+    text-align: center;
+    color: $base-color;
+    align-items: center;
+    justify-content: center;
+    //@media screen and (max-width: 390px){
+    //  background-color: $main-text;
+    //  margin: 0 -12px -25px -12px;
+    //  padding: 35px 0 99px 0;
+    //}
+    span{
+      font-size:  4.25em;
+      font-weight: 700;
+      @media screen and (max-width: 390px){
+        font-size:  3.5em;
+        color: #DDDDE2;
+      }
+    }
+    p{
+      font-weight: 325;
+      line-height: 2em;
+      font-size: 1.625em;
+      @media screen and (max-width: 390px){
+        font-size: 1.25em;
+        color: #DDDDE2;
+        line-height: 24px;
+      }
+    }
+  }
+}
+//Responsive Web Design - Media Queries
+.main{
+  @media screen and (min-width: 1920px){
+    .container{
+      max-width: 1416px;
+    }
+  }
+}
+@media screen and (max-width: 1440px){
+  .main .main_block .main_title {
+    font-size: 4em;
+  }
+  .main .main_block .main_sub{
+    font-size: 4em;
+  }
+  .main .main_block .main_subtext{
+    font-size: 1em;
+  }
+  .main .benefits{
+    padding: 80px 0 90px 0;
+    span{
+      font-size: 3.5em;
+    }
+    p{
+      font-size: 1.2em;
+    }
+  }
+}
+@media screen and (max-width: 1140px){
+  .main .btn{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main .main_block{
+    padding-top: 16em;
+  }
+  .main .benefits{
+    padding: 50px 0 20px 0;
+  }
+  .main .main_block .main_title{
+    font-size: 3.5em;
+  }
+  .main .main_block .main_sub{
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 720px){
+  .main .main_block .main_title{
+    font-size: 3em;
+  }
+  .main .main_block .main_sub{
+    font-size: 3em;
+  }
+  .main .btn{
+    font-size: 0.8em;
+  }
+  .main .benefits span{
+    font-size: 2.8em;
+  }
+}
+@media screen and (max-width: 540px) {
+  .main .main_block .main_subtext{
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 390px) {
+  .main .main_block .main_title{
+    font-size: 2em;
+  }
+  .main .main_block .main_sub{
+    font-size: 2em;
+  }
+  .main .main_block .main_subtext{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .main .btn{
+    width: 100%;
+    border-radius:  0.5em;
+    margin-bottom: 80px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .main .benefits{
+    background-color: $main-text;
+    margin: 0 -12px -25px -12px;
+    padding: 35px 0 99px 0;
+  }
+}

@@ -95,6 +95,10 @@
       line-height: 19px;
       color: $base-color;
     }
+    button:hover{
+      background: transparent;
+      color: $blue-color;
+    }
   }
 }
 @media screen and (max-width: 1440px){
@@ -102,31 +106,44 @@
     padding: 90px 110px;
   }
   .registrationForm .registrationForm_idea h4{
-    font-size: 1.4em;
+    font-size: 20px;
   }
   .registrationForm .registrationForm_idea p{
-    font-size: 0.9em;
+    font-size: 0.8em;
+    line-height: 20px;
   }
   .registrationForm .registrationForm_info{
     font-size: 0.9em;
   }
   .registrationForm .form_block h3{
-    font-size: 1.8em;
+    font-size: 22px;
     margin-top: -10px;
   }
   .registrationForm .form_block{
     padding-left: 82px;
   }
   .registrationForm .form_block span{
-    font-size: 1em;
+    font-size: 14px;
   }
   .registrationForm .form_block form input{
-    font-size: 0.9em;
+    font-size: 0.8em;
+    line-height: 15px;
   }
   .registrationForm .form_block form textarea{
-    font-size: 0.9em;
+    font-size: 0.8em;
+  }
+  .registrationForm .form_block button{
+    font-size: 0.8em;
   }
 }
+@media screen and (max-width: 1320px){
+  .registrationForm .social-container a {
+    padding-right: 39px;
+  }
+  .registrationForm .form_block h3{
+    padding-bottom: 0;
+  }
+  }
 @media screen and (max-width: 1140px){
   .registrationForm .registrationForm_absolute{
     padding: 60px 60px;
@@ -196,6 +213,10 @@
 @media screen and (max-width: 540px){
   .registrationForm .registrationForm_absolute{
     margin: 0 -12px;
+    padding: 60px 20px 60px 0;
+  }
+  .registrationForm .registrationForm_idea{
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 390px){
@@ -204,10 +225,11 @@
   }
     .registrationForm .form_block{
       padding-top: 40px;
+        margin-top: -26px;
     }
-  .registrationForm .registrationForm_absolute{
-    padding: 0;
-  }
+  //.registrationForm .registrationForm_absolute{
+  //  padding: 0;
+  //}
   .registrationForm  .form_block span {
     font-size: 12px;
     line-height: 16px;
@@ -237,7 +259,7 @@
     margin: 0;
   }
   .registrationForm .registrationForm_idea {
-    margin-top: -46px;
+    margin-top: -71px;
   }
   .registrationForm .registrationForm_idea h4{
     font-size: 18px;

@@ -6,6 +6,7 @@ import google from "./img/Google.svg";
 import facebook from "./img/Facebook.svg";
 import dribble from "./img/Dribbble.svg";
 import instagram from "./img/Instagram.svg";
+import Header from "../../../../Header/Header";
 
 function GetCompanyContact(props) {
   return (
@@ -25,6 +26,7 @@ class RegistrationForm extends Component {
   render() {
     return (
       <div className="registrationForm">
+        <Header/>
         <div className="registrationForm_absolute">
           <Row>
             <Col lg={6} md={12} sm={12} xs={12}>
@@ -71,7 +73,7 @@ class RegistrationForm extends Component {
               <div className="form_block" id="item1">
                 <h3>Связаться с нами</h3>
                 <span>
-                  Оставьте свою контактную информацию, и мы  с радостью свяжемся
+                  Оставьте свою контактную информацию, и мы с радостью свяжемся
                   с вами!
                 </span>
                 <form>
@@ -100,7 +102,7 @@ class RegistrationForm extends Component {
                       placeholder="Сообщение"
                     />
                   </p>
-                  <Button type="button">Отправить</Button> />
+                  <Button type="button">Отправить</Button>
                 </form>
               </div>
             </Col>

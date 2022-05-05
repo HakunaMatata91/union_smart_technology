@@ -1,18 +1,20 @@
 @import "../../../../styles/variable";
 .client {
+  margin-bottom: 150px;
   .react-multiple-carousel__arrow {
     display: none;
   }
-  .react-multi-carousel-track{
-    @media screen and (max-width: 390px){
-      margin-left: 5px;
-    }
-    .react-multi-carousel-track:first-child {
-      padding-left: 30px;
-    }
-    li{
-      padding: 0 30px 0 50px;
-    }
+  .react-multi-carousel-list{
+    padding-bottom: 90px;
+    //@media screen and (max-width: 390px){
+    //  margin-left: 5px;
+    //}
+    //.react-multi-carousel-track:first-child {
+    //  padding-left: 30px;
+    //}
+    //li{
+    //  padding: 0 30px 0 50px;
+    //}
   }
 
 .client_title {
@@ -23,11 +25,6 @@
     font-size: 3.875em;
     line-height: 110%;
     color: $main-text;
-    @media screen and (max-width: 390px) {
-      font-size: 30px;
-      line-height: 32px;
-      padding: 57px 0 98px 0;
-    }
   }
 
 }
@@ -41,7 +38,8 @@
 }
 @media screen and (max-width: 1440px){
   .client .client_title{
-    font-size: 2.8em;
+    font-size: 50px;
+    padding-top: 140px;
   }
 }
 @media screen and (max-width: 1140px){
@@ -49,14 +47,38 @@
     padding: 85px 0 80px 0;
   }
 }
+@media screen and (max-width: 991px){
+  .client .client_title{
+    font-size: 40px;
+  }
+}
 @media screen and (max-width: 720px){
   .client .client_title{
-    font-size: 2em;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 540px){
+  .client{
+    margin-bottom: 0;
+  }
+  .client .react-multi-carousel-list{
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 390px){
+  .client{
+    margin-bottom: 90px;
+  }
+  .client .react-multi-carousel-list{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
   .client .client_title{
-    font-size: 1.8em;
     padding: 50px 0;
+
+  }
+  .react-multi-carousel-item  {
+    //margin-right: -5px;
+    padding: 30px;
   }
 }

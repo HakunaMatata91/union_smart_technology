@@ -15,7 +15,7 @@ class MainOffers extends Component {
       <div className="offers">
         <Container>
           <Row>
-            <Col lg={9} xs={12}>
+            <Col lg={9} md={12} sm={12} xs={12}>
               <div className="offers_title">Наши предложения</div>
               <div className="offers_subtitle">Разработка полного цикла</div>
               <div className="offers_text">
@@ -88,7 +88,7 @@ class MainOffers extends Component {
             <Col lg={12} md={12} sm={12}>
               <div className="offers_button">
                 <a
-                  href="#/"
+                  href="/services"
                   className="btn btn-primary3 btn-lg "
                   role="button"
                   aria-pressed="true"

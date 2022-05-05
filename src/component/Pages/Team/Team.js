@@ -11,6 +11,7 @@ import team6 from "./img/team6.png";
 import team7 from "./img/team7.png";
 import team8 from "./img/team8.png";
 import bg from "./img/CTA_blockBG.png";
+import Header from "../../Header/Header";
 
 function GetTeamInfo(props) {
   return (
@@ -26,9 +27,10 @@ class Team extends Component {
   render() {
     return (
       <div className="Team" style={{ backgroundImage: `url(${teamBG})` }}>
+        <Header/>
         <Container>
           <Row>
-            <Col xl={6} lg={6} xs={12}>
+            <Col xl={6} lg={6} md={10} sm={10} xs={12}>
               <div className="Team_info">
                 <p>Будем знакомы</p>
                 <h2>Команда UST</h2>
@@ -46,7 +48,7 @@ class Team extends Component {
           <Row>
             <Col xl={6} lg={6} xs={12}>
               <div className="Team_about">
-                <h2>Команда, ориентированная на людей</h2>
+                <h2>Команда, ориентированная на людей</h2>
                 <p>
                   В команде нашей компании работают высококвалифицированные
                   IT-специалисты, которые обладают не только качественными
@@ -57,48 +59,48 @@ class Team extends Component {
                 </p>
               </div>
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo
                 img={team1}
                 name="Николай Шпаков"
                 position="Chief Executive Officer"
               />
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo img={team2} name="Олег Науменко" position="CТО" />
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo
                 img={team3}
                 name="Дмитрий Ершов"
                 position="Руководитель группы IOS"
               />
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo
                 img={team4}
                 name="Ярослав Фомин"
                 position="Специалист по подбору талантов"
               />
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo
                 img={team5}
                 name="Елена Горюнова"
                 position="Руководитель группы дизайнеров"
               />
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo
                 img={team6}
                 name="Ярослав Фомин"
                 position="Руководитель группы QA"
               />
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo img={team7} name="Николай Шпаков" position="QA" />
             </Col>
-            <Col xl={3} lg={3} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={6} xs={12}>
               <GetTeamInfo
                 img={team8}
                 name="Ольга Науменко"
@@ -107,7 +109,7 @@ class Team extends Component {
             </Col>
           </Row>
         </Container>
-        <div className="Team_footer" style={{ backgroundImage: `url(${bg})` }}>
+        <div className="Team_footer" >
           <Container>
             <Row>
               <Col xl={8} lg={8} xs={12}>

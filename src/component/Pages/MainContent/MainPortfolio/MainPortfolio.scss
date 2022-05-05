@@ -1,7 +1,7 @@
 @import "../../../../styles/variable";
 
 .portfolio {
-  font-family: 'Gotham';
+  font-family: 'Gotham', sans-serif;
   background: linear-gradient(180deg, rgb(220, 220, 220) 650px, rgb(255, 255, 255) 90px);
 
   .portfolio_main {
@@ -24,17 +24,17 @@
 
     p {
       font-weight: 325;
-      font-size: 1.25em;
+      font-size: 20px;
       line-height: 28px;
     }
   }
 
 
   .portfolio_info {
-    h4 {
+    h3 {
       padding-top: 12px;
       font-weight: 350;
-      font-size: 1.3em;
+      font-size: 22px;
       line-height: 32px;
       color: $blue-text;
     }
@@ -42,8 +42,8 @@
     p {
       padding-bottom: 58px;
       font-weight: 325;
-      font-size: 1.125em;
-      line-height: 22px;
+      font-size: 18px;
+      line-height: 20px;
     }
   }
   .portfolio_button {
@@ -51,7 +51,7 @@
     margin-left: 25px;
     .btn {
       padding: 14px 45px;
-      font-family: 'Gotham';
+      font-family: 'Gotham', sans-serif;
       font-style: normal;
       font-weight: 350;
       font-size: 16px;
@@ -65,12 +65,21 @@
       color: #EEEFF1;
       border: $blue-color;
     }
+    .btn-secondary:hover{
+      background-color: transparent;
+      color: $blue-color;
+      border: 1px solid $blue-color;
+    }
 
     .btn-primary {
       color: $blue-color;
       border: 1px solid $blue-color;
       margin-right: 20px;
       background-color: transparent;
+    }
+    .btn-primary:hover{
+      background: $blue-color;
+      color: #EEEFF1;
     }
   }
 }
@@ -84,28 +93,43 @@
 }
 @media screen and (max-width: 1440px){
   .portfolio .portfolio_main p:first-child{
-    font-size: 1.4em;
+    font-size: 22px;
   }
   .portfolio .portfolio_main h3{
-    font-size: 2.8em;
+    font-size: 50px;
   }
   .portfolio .portfolio_main p{
-    font-size: 1em;
+    font-size: 16px;
+    line-height: 20px;
   }
   .portfolio .portfolio_info h4{
     font-size: 1.2em;
+    line-height: 20px;
   }
   .portfolio .portfolio_info p{
-    font-size: 1em;
+    font-size: 16px;
+    line-height: 18px;
   }
   }
+@media screen and (max-width: 1140px){
+  .portfolio .portfolio_info h3{
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .portfolio .portfolio_info p{
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 991px){
   .portfolio .portfolio_main{
-    padding: 0;
+    padding: 50px 0 0 0;
     margin-bottom: 40px;
   }
   .benefits .benefits_main .items{
     padding-bottom: 50px;
+  }
+  .portfolio .portfolio_main h3{
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 720px){
@@ -113,7 +137,13 @@
     text-align: center;
   }
   .portfolio .portfolio_main h3{
-    font-size: 2em;
+    font-size: 35px;
+  }
+  .portfolio .portfolio_main p:first-child{
+    font-size: 20px;
+  }
+  .portfolio .portfolio_display .info{
+    display: none;
   }
 }
 @media screen and (max-width: 540px){
@@ -124,6 +154,7 @@
   .portfolio .portfolio_main p{
     font-size: 0.8em;
   }
+
 }
 @media screen and (max-width: 390px){
   .portfolio .portfolio_main p:first-child{
@@ -131,12 +162,11 @@
     padding: 30px 0 0 0;
   }
   .portfolio .portfolio_main h3{
-    font-size: 1.8em;
     line-height: 32px;
     padding-bottom: 16px;
   }
   .portfolio .portfolio_main p{
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -151,7 +181,7 @@
     line-height: 22px;
   }
   .portfolio .portfolio_info p{
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
@@ -160,7 +190,7 @@
     display: none;
   }
   .portfolio .portfolio_button .btn{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;

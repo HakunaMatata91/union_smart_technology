@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import background from "./img/bg.png";
 import "./Main.scss";
+import Header from "../../../Header/Header";
 
 class Main extends Component {
   render() {
     return (
       <div className="main" style={{ backgroundImage: `url(${background})` }}>
+        <Header/>
         <Container>
           <Row>
             <Col xl={9} lg={12} md={12} sm={12}>

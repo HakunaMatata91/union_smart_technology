@@ -48,12 +48,12 @@ class Footer extends Component {
             </Col>
             <Col xl={3} lg={3} md={12} sm={12} xs={12}>
               <div className="footer_navigation">
-                <Nav.Link href="#action1">Главная</Nav.Link>
-                <Nav.Link href="#about">Команда</Nav.Link>
-                <Nav.Link href="#action3">Услуги</Nav.Link>
-                <Nav.Link href="#action4">Карьера</Nav.Link>
-                <Nav.Link href="#action5">Портфолио</Nav.Link>
-                <Nav.Link href="#action6">Контакты</Nav.Link>
+                <Nav.Link href="#">Главная</Nav.Link>
+                <Nav.Link href="/team">Команда</Nav.Link>
+                <Nav.Link href="/services">Услуги</Nav.Link>
+                <Nav.Link href="/career">Карьера</Nav.Link>
+                <Nav.Link href="/portfolio">Портфолио</Nav.Link>
+                <Nav.Link href="/contact">Контакты</Nav.Link>
               </div>
             </Col>
             {/*<Col xl={2} lg={2} md={6} sm={12} xs={6}>*/}

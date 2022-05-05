@@ -5,6 +5,7 @@ import background from "./img/career_bg_footer.png";
 import "./Career.scss";
 import down from "./img/down.svg";
 import CareerForm from "./CareerForm/CareerForm";
+import Header from "../../Header/Header";
 
 function GetPositionDescription(props) {
   let wordChars = props.dutiesDescription.split(";");
@@ -57,20 +58,27 @@ class Career extends Component {
         className="Career"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
+        <Header/>
         <Container>
           <Row>
-            <Col xl={7} lg={7} xs={12}>
+            <Col xl={6} lg={6} xs={12}>
               <div className="Career_info">
                 <h2>Карьера</h2>
                 <p>
                   Присоединяйтесь к команде победителей, способных решать
                   масштабные нешаблонные задачи, достойные лучших умов отрасли.
                 </p>
+                <button
+                    type="button"
+                    className="btn btn-primary btn-lg btn-block button_footer"
+                >
+                  Узнать больше
+                </button>
               </div>
             </Col>
           </Row>
           <Row>
-            <Col xl={8} lg={8} xs={12}>
+            <Col xl={8} lg={10} md={10} xs={12}>
               <div className="career_description">
                 <h3>С нами классно</h3>
                 <p>
@@ -84,7 +92,7 @@ class Career extends Component {
                 </p>
               </div>
             </Col>
-            <Col xl={8} lg={8} xs={12}>
+            <Col xl={8} lg={8} xs={9}>
               <div className="position">
                 <h4>Java Developer</h4>
                 {this.state.isToggleOn[0] === true && (
@@ -110,7 +118,7 @@ class Career extends Component {
                 <img src={down} alt="" />
               </button>
             </Col>
-            <Col xl={8} lg={8} xs={12}>
+            <Col xl={8} lg={8} xs={9}>
               <div className="position">
                 <h4>IOS-разработчик</h4>
                 {this.state.isToggleOn[1] === true && (

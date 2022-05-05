@@ -53,20 +53,23 @@
 }
 @media screen and (max-width: 1440px){
   .Faq .Faq_content .Faq_title p{
-    font-size: 1.4em;
+    font-size: 22px;
   }
   .Faq .Faq_content .Faq_title h3{
-    font-size: 2.8em;
+    font-size: 50px;
+    line-height: 47px;
   }
   .Faq .Faq_content .Faq_main{
     padding-bottom: 30px;
   }
   .Faq .Faq_content .Faq_main span{
-    font-size: 1.2em;
+    font-size: 20px;
+    line-height: 20px;
   }
   .Faq .Faq_content .Faq_main p{
     font-size: 0.9em;
     padding-left: 80px;
+    line-height: 20px;
   }
 
 }
@@ -75,12 +78,25 @@
     padding: 140px 0 110px 0;
   }
   .Faq .Faq_content .Faq_title h3{
-    font-size: 2.8em;
+    font-size: 40px;
+    padding-bottom: 40px;
   }
-}
+  .Faq .Faq_content .Faq_main span {
+    font-size: 18px;
+  }
+  .Faq .Faq_content .Faq_main p{
+    font-size: 0.8em;
+  }
+  }
 @media screen and (max-width: 720px){
+  .Faq .Faq_content{
+    padding-top: 50px;
+  }
+  .Faq .Faq_content .Faq_title p{
+    font-size: 20px;
+  }
   .Faq .Faq_content .Faq_title h3{
-    font-size: 2em;
+    font-size: 35px;
   }
   .Faq .Faq_content .Faq_main span{
     font-size: 1em;
@@ -98,13 +114,15 @@
   }
 }
 @media screen and (max-width: 390px){
+  .Faq{
+    padding-top: 100px;
+  }
   .Faq .Faq_content .Faq_title p{
     font-weight: 325;
     font-size: 20px;
     line-height: 24px;
   }
   .Faq .Faq_content .Faq_title h3{
-    font-size: 30px;
     line-height: 32px;
     padding-bottom: 34px;
   }

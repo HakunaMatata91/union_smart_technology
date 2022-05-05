@@ -20,7 +20,7 @@ class MainAbout extends Component {
               </div>
             </Col>
 
-            <Col xl={5} lg={5} md={12} xs={12}>
+            <Col xl={5} lg={5} md={10} sm={10} xs={12}>
               <div className="about_text">
                 <h2>Почему UTS</h2>
                 <p>
@@ -46,7 +46,7 @@ class MainAbout extends Component {
               </div>
               <div className="about_button">
                 <a
-                  href="#"
+                  href="/career"
                   className="btn btn-primary btn-lg "
                   role="button"
                   aria-pressed="true"

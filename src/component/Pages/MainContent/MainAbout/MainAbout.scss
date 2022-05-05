@@ -2,12 +2,13 @@
 .about {
   position: relative;
   .about_title {
+    margin-left: -14px;
+    padding: 150px 0 24px 0;
     p {
-      padding-top: 2em;
-      font-family: 'Gotham';
+      font-family: 'Gotham', sans-serif;
       font-style: normal;
       font-weight: 400;
-      font-size: 1.625em;
+      font-size: 26px;
       line-height: 30px;
       color: #35417F;
     }
@@ -15,25 +16,26 @@
   .about_text {
     padding-left: 15px;
     h2 {
-      font-family: 'Gotham';
+      font-family: 'Gotham', sans-serif;
       font-style: normal;
       font-weight: 700;
-      font-size: 3.875em;
-      line-height: 60px;
+      font-size: 62px;
+      line-height: 47px;
       color: #03115F;
+      padding-bottom: 20px;
     }
   }
   .about_text p{
-      font-family: 'Gotham';
+      font-family: 'Gotham', sans-serif;
       font-style: normal;
       font-weight: 325;
-      font-size: 1.125rem;
-      line-height: 22px;
-      padding-bottom: 60px;
+      font-size: 18px;
+      line-height: 20px;
+      padding-bottom: 40px;
     }
     .btn{
       padding: 14px 45px;
-      font-family: 'Gotham';
+      font-family: 'Gotham', sans-serif;
       font-style: normal;
       font-weight: 350;
       font-size: 16px;
@@ -43,27 +45,21 @@
   .about_button{
     padding-left: 20px;
   }
-    //.btn-primary{
-    //  margin-right: 40px;
-    //  @media screen and (max-width: 390px){
-    //    display: none;
-    //  }
-    //}
     .btn-secondary{
       background-color: transparent;
       color: $blue-color;
       border: 1px solid $blue-color;
       margin-left: 30px;
-      //@media screen and (max-width: 390px){
-      //  border: none;
-      //  font-family: 'Roboto';
-      //  font-style: normal;
-      //  font-weight: 500;
-      //  font-size: 14px;
-      //  line-height: 16px;
-      //}
     }
+  .btn-secondary:hover{
+    background: $blue-color;
+    color: $base-color;
   }
+  .btn-primary:hover{
+    background: transparent;
+    color: $blue-color;
+  }
+}
   .about_img{
     margin: 0 -12px 0 -12px;
   }
@@ -77,23 +73,26 @@
   }
 }
 @media screen and (max-width: 1440px){
+  .about .about_title{
+    margin-left: 0;
+  }
   .about .about_title p{
-    padding-top: 5em;
-    font-size: 1.4em;
+    font-size: 22px;
   }
   .about .about_img{
     margin: 0;
   }
   .about .about_text h2{
-    font-size: 2.8em;
-    margin-top: -10px;
+    font-size: 50px;
   }
   .about .about_text p{
-    font-size: 1em;
+    font-size: 16px;
   }
   .about .about_button{
+    padding-left: 0;
     display: flex;
     padding-top: 0;
+    margin-top: -14px;
     .btn{
       padding: 14px 20px;
     }
@@ -103,31 +102,36 @@
   }
 
 }
+@media screen and (max-width: 1440px){
+  .about .about_text p{
+    line-height: 20px;
+  }
+}
 @media screen and (max-width: 1140px){
   .about .about_text{
     padding-left: 0;
   }
-  .about .about_img{
-    padding-top: 60px;
-  }
   .about .about_text p{
     font-size: 0.8em;
   }
-  .about .about_title p{
-    padding-bottom: 50px;
+  .about .about_title{
+    padding-top: 75px;
+  }
+  .about .about_text h2{
+    padding-bottom: 0;
   }
 }
 @media screen and (max-width: 991px){
   .about .about_title p{
     position: absolute;
-    top: 300px;
+    top: 450px;
   }
   .about .about_text{
     position: absolute;
-    top: 450px;
-    width: 70%;
+    top: 490px;
+    //width: 70%;
     h2{
-      font-size: 2em;
+      font-size: 40px;
     }
   }
   .about .about_img img{
@@ -140,44 +144,51 @@
   }
   .about .about_button .btn-secondary{
     border: none;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     position: absolute;
-    top: 790px;
+    top: 795px;
     right: 120px;
   }
   .about .about_button .btn-primary{
     display: none;
   }
 }
+@media screen and (max-width: 720px){
+  .about .about_title p {
+    font-size: 20px;
+  }
+  .about .about_text h2{
+    font-size: 35px;
+  }
+  .about .about_button .btn-secondary{
+    top: 859px;
+  }
+  .about .about_text {
+    padding-right: 50px;
+  }
+  }
 @media screen and (max-width: 540px) {
   .about .about_button .btn-secondary{
-    top: 910px;
+    top: 862px;
   }
 }
 @media screen and (max-width: 390px) {
   .about .about_title p{
     font-size: 1.25em;
-    margin-top: 20px;
-  }
-  .about .about_text h2{
-    font-size: 1.8em;
   }
   .about .about_text p{
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
   }
-  .about .about_text{
-    width: 90%;
-  }
   .about .about_button .btn-secondary{
-    top: 930px;
-    right: 0;
+    top: 1000px;
+    right: 20px;
   }
 }
 

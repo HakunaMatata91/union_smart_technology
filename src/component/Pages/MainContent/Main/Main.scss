@@ -3,35 +3,33 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding-top: 100px;
-  margin-top: -100px;
   .main_block{
-    padding-top: 9.375em;
-    padding-bottom: 3.125em;
-    line-height: 1.1;
+    padding: 247px 0 60px 0;
     .main_title  {
-      font-family: 'Gotham XNarrow';
+      font-family: 'Gotham XNarrow', sans-serif;
       font-style: normal;
       font-weight: 350;
-      font-size: 4.625em;
+      font-size: 74px;
       letter-spacing: 0.02em;
       color: $base-color;
       margin-bottom: 0;
+      line-height: 70px;
     }
     .main_sub {
-      font-family: 'Gotham XNarrow';
+      font-family: 'Gotham XNarrow', sans-serif;
       font-style: normal;
       font-weight: 350;
       color: $blue-color;
-      font-size: 4.625em;
+      font-size: 74px;
       letter-spacing: 0.02em;
+      line-height: 70px;
     }
     .main_subtext{
-      padding-top: 1.5em;
-      font-family: 'Gotham';
+      padding-top: 24px;
+      font-family: 'Gotham', sans-serif;
       font-style: normal;
       font-weight: 325;
-      font-size: 1.25em;
+      font-size: 20px;
       line-height: 28px;
       color: $nav-color;
       letter-spacing: 0.02em;
@@ -42,37 +40,25 @@
 .btn{
   padding: 14px 20px;
   background-color: $blue-color;
-  border-radius: 0em;
 }
+  .btn:hover{
+    background: $base-color;
+    color: $blue-color;
+  }
   .benefits{
-    padding: 196px 0 155px 0;
-    font-family: 'Gotham';
+    padding: 150px 0 155px 0;
+    font-family: 'Gotham', sans-serif;
     text-align: center;
     color: $base-color;
     align-items: center;
     justify-content: center;
-    //@media screen and (max-width: 390px){
-    //  background-color: $main-text;
-    //  margin: 0 -12px -25px -12px;
-    //  padding: 35px 0 99px 0;
-    //}
     span{
-      font-size:  4.25em;
+      font-size:  68px;
       font-weight: 700;
-      @media screen and (max-width: 390px){
-        font-size:  3.5em;
-        color: #DDDDE2;
-      }
     }
     p{
       font-weight: 325;
-      line-height: 2em;
       font-size: 1.625em;
-      @media screen and (max-width: 390px){
-        font-size: 1.25em;
-        color: #DDDDE2;
-        line-height: 24px;
-      }
     }
   }
 }
@@ -104,8 +90,25 @@
     }
   }
 }
+@media screen and (max-width: 1320px){
+  .main .main_block .main_title {
+    letter-spacing: 0;
+    line-height: 60px;
+  }
+  .main .main_block .main_sub{
+    letter-spacing: 0;
+    line-height: 60px;
+  }
+  .main .main_block .main_subtext{
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+  .registrationForm .social-container a {
+    padding-right: 39px;
+  }
+  }
 @media screen and (max-width: 1140px){
-  .main .btn{
+    .main .btn{
     font-size: 1em;
   }
 }
@@ -125,32 +128,54 @@
 }
 @media screen and (max-width: 720px){
   .main .main_block .main_title{
-    font-size: 3em;
+    font-size: 50px;
+    line-height: 45px;
   }
   .main .main_block .main_sub{
-    font-size: 3em;
+    font-size: 50px;
+    line-height: 45px;
   }
   .main .btn{
     font-size: 0.8em;
   }
   .main .benefits span{
-    font-size: 2.8em;
+    font-size: 40px;
+  }
+  .main .main_block .main_subtext{
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 540px) {
+  .main .main_block .main_title{
+    font-size: 40px;
+  }
+  .main .main_block .main_sub{
+    font-size: 40px;
+  }
   .main .main_block .main_subtext{
     font-size: 0.8em;
   }
+  .main .benefits span{
+    font-size: 35px;
+  }
+  .main .benefits p{
+    font-size: 18px;
+  }
+  //.main .benefits{
+  //  background-color: $main-text;
+  //  margin: 20px -100px -25px -100px;
+  //  padding: 35px 0 99px 0;
+  //}
 }
 @media screen and (max-width: 390px) {
   .main .main_block .main_title{
-    font-size: 2em;
+    font-size: 40px;
   }
   .main .main_block .main_sub{
-    font-size: 2em;
+    font-size: 40px;
   }
   .main .main_block .main_subtext{
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -160,13 +185,12 @@
     border-radius:  0.5em;
     margin-bottom: 80px;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 14px;
   }
   .main .benefits{
     background-color: $main-text;
-    margin: 0 -12px -25px -12px;
+    margin: 20px -12px -25px -12px;
     padding: 35px 0 99px 0;
   }
 }

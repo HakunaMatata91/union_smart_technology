@@ -30,36 +30,36 @@ class MainPortfolio extends Component {
             <Col lg={3} md={6} xs={12}>
               <div className="portfolio_info">
                 <img src={offer1} alt="offer" />
-                <h4>Мобильный контроль</h4>
+                <h3>Мобильный контроль</h3>
                 <p>Сервис для работы с клиентами и партнерами</p>
               </div>
             </Col>
             <Col lg={3} md={6} xs={12}>
               <div className="portfolio_info">
                 <img src={offer2} alt="offer" />
-                <h4>Голосовое управление</h4>
+                <h3>Голосовое управление</h3>
                 <p>Сервис для работы по задачам</p>
               </div>
             </Col>
             <Col lg={3} md={6} xs={12}>
               <div className="portfolio_info">
                 <img src={offer3} alt="offer" />
-                <h4>Vroomgames</h4>
+                <h3>Vroomgames</h3>
                 <p>Сервис для работы со списками заказов</p>
               </div>
             </Col>
             <Col lg={3} md={6} xs={12}>
               <div className="portfolio_info">
                 <img src={offer4} alt="offer" />
-                <h4>ATOL-бонус</h4>
+                <h3>ATOL-бонус</h3>
                 <p>Мобильное приложение для профессионалов</p>
               </div>
             </Col>
             <Col lg={6} md={6} xs={0}>
               <div className="portfolio_display">
-                <div className="portfolio_info">
+                <div className="portfolio_info info">
                   <img src={offer5} alt="offer" />
-                  <h4>Prorab-x</h4>
+                  <h3>Prorab-x</h3>
                   <p>Мобильное приложение для строителей</p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ class MainPortfolio extends Component {
               <div className="portfolio_display">
                 <div className="portfolio_info info">
                   <img src={offer6} alt="offer" />
-                  <h4>Актуаль</h4>
+                  <h3>Актуаль</h3>
                   <p>Сайт промом игры</p>
                 </div>
               </div>
@@ -81,14 +81,6 @@ class MainPortfolio extends Component {
                 aria-pressed="true"
               >
                 Портфолио
-              </a>
-              <a
-                href="#"
-                className="btn btn-secondary btn-lg active"
-                role="button"
-                aria-pressed="true"
-              >
-                Заказать проект
               </a>
             </div>
           </Row>

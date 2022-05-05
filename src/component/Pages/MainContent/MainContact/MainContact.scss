@@ -1,14 +1,16 @@
 @import "../../../../styles/variable";
 .contact{
-  margin-top: 120px;
+  //margin-top: 120px;
   background-image: url("img/form.bg.png");
   background-size: cover;
   font-family: 'Gotham';
   height: 564px;
+  padding-top: 190px;
+  margin-top: -100px;
   color: $base-color;
   margin-bottom: 710px;
   @media screen and (max-width: 390px){
-    background-image: url("img/contact.smal.bg.png");
+    background-image: url("img/bgsmall.png");
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 80px;
@@ -20,7 +22,8 @@
     line-height: 110%;
   }
   .contact_title{
-    padding: 120px 0 20px 0;
+    padding-bottom: 20px;
+    margin-top: -30px;
     font-weight: 325;
     font-size: 1.625em;
     line-height: 123%;
@@ -39,35 +42,50 @@
     margin-bottom: 500px;
   }
   .contact .contact_title{
-    font-size: 1.4em;
+    font-size: 24px;
   }
   .contact .contact_text{
-    font-size: 2.8em;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 47px;
   }
 }
 @media screen and (max-width: 991px){
   .contact{
-    margin-bottom: 720px;
+    height:100%;
+    padding-top: 280px;
+    margin-bottom: 920px;
+  }
+  .contact .contact_text{
+    font-size: 40px;
+  }
+  .contact .contact_title{
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 720px){
   .contact .contact_text{
-    font-size: 2em;
+    font-size: 35px;
   }
-}
-@media screen and (max-width: 390px){
   .contact .contact_title{
     font-size: 20px;
-    line-height: 24px;
-    padding: 36px 0 20px 0;
   }
-  .contact .contact_text{
-    font-size: 30px;
-    line-height: 32px;
-    margin-bottom: 20px;
-  }
+}
+@media screen and (max-width: 540px){
   .contact{
+    margin-bottom: 825px;
+  }
+  .contact .contact_title{
+    margin-top: -190px;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .contact{
+    padding-top: 50px;
     margin-bottom: 564px;
   }
+
+  //.contact{
+  //  margin-bottom: 564px;
+  //}
 }

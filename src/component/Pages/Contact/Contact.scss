@@ -48,12 +48,32 @@
   }
   }
 @media screen and (max-width: 720px){
-
+  .Contact .Contact_text{
+    line-height: 50px;
+  }
 }
 @media screen and (max-width: 540px){
-
-}
+  .Contact .Contact_title{
+    font-size: 22px;
+  }
+  .Contact .Contact_text {
+    font-size: 43px;
+  }
+  .Contact {
+    padding-bottom: 702px;
+  }
+  }
 
 @media screen and (max-width: 390px){
-
-}
+  .Contact{
+    background-position: top center;
+    padding-bottom: 645px;
+  }
+  .Contact .Contact_text{
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .registrationForm .form_block{
+    padding-top: 0;
+  }
+  }

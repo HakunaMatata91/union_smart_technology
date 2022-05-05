@@ -1,5 +1,5 @@
 @import "../../../../styles/variable";
-.contact{
+.contact {
   //margin-top: 120px;
   background-image: url("img/form.bg.png");
   background-size: cover;
@@ -9,12 +9,7 @@
   margin-top: -100px;
   color: $base-color;
   margin-bottom: 710px;
-  @media screen and (max-width: 390px){
-    background-image: url("img/bgsmall.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 80px;
-  }
+}
   .contact_text{
     padding-bottom: 267px;
     font-weight: 700;
@@ -28,7 +23,7 @@
     font-size: 1.625em;
     line-height: 123%;
   }
-}
+
 //Responsive Web Design - Media Queries
 .contact{
   @media screen and (min-width: 1920px){
@@ -81,11 +76,11 @@
 
 @media screen and (max-width: 390px){
   .contact{
-    padding-top: 50px;
+    //padding-top: 50px;
     margin-bottom: 564px;
   }
-
-  //.contact{
-  //  margin-bottom: 564px;
-  //}
+  .contact .contact_text {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }

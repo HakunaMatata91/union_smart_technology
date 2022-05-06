@@ -69,6 +69,7 @@
       background-color: transparent;
       color: $blue-color;
       border: 1px solid $blue-color;
+      transition: 0.8s;
     }
 
     .btn-primary {
@@ -80,6 +81,7 @@
     .btn-primary:hover{
       background: $blue-color;
       color: #EEEFF1;
+      transition: 0.8s;
     }
   }
 }

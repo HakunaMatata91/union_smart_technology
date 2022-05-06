@@ -4,7 +4,7 @@
   background-position: top center;
   background-size: cover;
   .main_block{
-    padding: 247px 0 60px 0;
+    padding: 200px 0 60px 0;
     .main_title  {
       font-family: 'Gotham XNarrow', sans-serif;
       font-style: normal;
@@ -40,6 +40,7 @@
 .btn{
   padding: 14px 20px;
   background-color: $blue-color;
+  color: $base-color;
 }
   .btn:hover{
     background: $base-color;

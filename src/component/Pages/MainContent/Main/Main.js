@@ -22,12 +22,12 @@ class Main extends Component {
                   веб-платформы и находим для них лучшие решения.
                 </div>
               </div>
-              <button
-                type="button"
-                className="btn btn-primary btn-lg btn-block"
-              >
-                Заказать проект
-              </button>
+              <a
+                  href="/portfolio"
+                  className="btn btn-primary3 btn-lg "
+                  role="button"
+                  aria-pressed="true"
+              >Заказать проект</a>
             </Col>
           </Row>
           <Row>

@@ -19,8 +19,10 @@
       color: #DDDDE2;
       padding-bottom: 78px;
     }
-    .Portfolio_button{
-      //margin-bottom: 140px;
+    .Portfolio_button:hover{
+      background: $base-color;
+      color: #1E74EC;
+      transition: 0.8s;
     }
   }
   .Portfolio_page{
@@ -47,7 +49,7 @@
   }
   .Portfolio_footer{
     background-repeat: no-repeat;
-    margin: 100px 0 -195px 0;
+    margin: 100px 0 -199px 0;
     padding: 243px 0 0 0;
     p{
       font-weight: 350;
@@ -63,9 +65,18 @@
       padding-bottom: 24px;
     }
     .button_footer{
-      margin: 34px 0 244px 0;
+      //margin: 34px 0 244px 0;
       padding: 10px 40px;
     }
+    .button_footer:hover{
+      background: $base-color;
+      color: #1E74EC;
+      transition: 0.8s;
+    }
+  }
+  .Portfolio_footer-main{
+    padding-bottom: 205px;
+    margin-bottom: 205px;
   }
 }
 //Responsive Web Design - Media Queries
@@ -96,9 +107,9 @@
   .Portfolio .Portfolio_footer-main p:nth-child(3){
     font-size: 16px;
   }
-  .Portfolio .Portfolio_footer-main{
-    margin-bottom: 204px;
-  }
+  //.Portfolio .Portfolio_footer-main{
+  //  margin-bottom: 204px;
+  //}
   }
 @media screen and (max-width: 1140px){
   .Portfolio .Portfolio_page{

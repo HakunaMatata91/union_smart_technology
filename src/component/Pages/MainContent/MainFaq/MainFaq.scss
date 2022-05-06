@@ -36,8 +36,9 @@
     button{
       background-color: transparent;
       text-align: right;
-      :active{
+      :hover{
         transform: rotate(-45deg);
+        transition: 0.8s;
       }
     }
   }

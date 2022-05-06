@@ -75,11 +75,24 @@
       }
     }
   }
+  .button_career {
+    padding: 14px 20px;
+    background: #1E74EC;
+  }
+  .button_career:hover{
+    background: $base-color;
+    color: #1E74EC;
+    transition: 0.8s;
+  }
   .button{
-    padding-top: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: inherit;
+    background: transparent;
+  }
+  .button1:hover{
+    border: 1px solid #1E74EC;
+    border-radius: 3px;
+    background: transparent;
+    color: #1E74EC;
+    transition: 0.8s;
   }
   .Career_footer{
     background-repeat: no-repeat;
@@ -124,7 +137,7 @@
     margin-bottom: 100px;
   }
   .btn-lg, .btn-group-lg > .btn{
-    font-size: 16px;
+    font-size: 18px;
   }
   .Career .Career_info p{
     line-height: 22px;

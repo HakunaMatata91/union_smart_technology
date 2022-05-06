@@ -54,10 +54,12 @@
   .btn-secondary:hover{
     background: $blue-color;
     color: $base-color;
+    transition: 0.8s;
   }
   .btn-primary:hover{
     background: transparent;
     color: $blue-color;
+    transition: all 0.8s;
   }
 }
   .about_img{

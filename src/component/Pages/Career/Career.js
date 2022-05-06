@@ -70,7 +70,7 @@ class Career extends Component {
                 </p>
                 <button
                     type="button"
-                    className="btn btn-primary btn-lg btn-block button_footer"
+                    className="btn btn-primary btn-lg btn-block button_career"
                 >
                   Узнать больше
                 </button>

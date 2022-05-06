@@ -43,6 +43,11 @@
         background: #1E74EC;
       }
     }
+    .Services_button a:hover{
+      background: $base-color;
+      color: #1E74EC;
+      transition: 0.8s;
+    }
   }
   .Services_cooperation{
     padding: 183px 0 64px 0;

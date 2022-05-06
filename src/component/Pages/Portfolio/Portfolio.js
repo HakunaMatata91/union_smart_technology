@@ -121,12 +121,13 @@ class Portfolio extends Component {
                     Вы хотите воплотить в жизнь смелую идею, но вам нужна помощь?
                     Или вы вообще не знаете, с чего начать реализацию проекта?
                   </p>
-                  <button
-                      type="button"
+                  <a
+                      href="/contact"
                       className="btn btn-primary btn-lg btn-block button_footer"
-                  >
-                    Связаться
-                  </button>
+                      role="button"
+                      aria-pressed="true"
+                  > Связаться</a>
+
                 </div>
               </Col>
             </Row>

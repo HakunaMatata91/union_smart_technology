@@ -10,7 +10,7 @@ import {Route,  Routes, HashRouter} from "react-router-dom";
 import Portfolio from "./component/Pages/Portfolio/Portfolio";
 import Contact from "./component/Pages/Contact/Contact";
 
-function App(props) {
+function App() {
   return (
       <HashRouter >
           <main className="for_page">

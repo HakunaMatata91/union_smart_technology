@@ -12,7 +12,7 @@ import Contact from "./component/Pages/Contact/Contact";
 
 function App(props) {
   return (
-      <HashRouter basename="/joonline" >
+      <HashRouter >
           <main className="for_page">
               {/*<Header />*/}
               <div className="pages">

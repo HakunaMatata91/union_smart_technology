@@ -7,14 +7,14 @@ import MainContent from "./component/Pages/MainContent/MainContent";
 import Team from "./component/Pages/Team/Team";
 import Services from "./component/Pages/Services/Services";
 import Career from "./component/Pages/Career/Career";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {Route, BrowserRouter as Router, Routes, HashRouter} from "react-router-dom";
 import Portfolio from "./component/Pages/Portfolio/Portfolio";
 import Contact from "./component/Pages/Contact/Contact";
 
 function App() {
   return (
     <main className="for_page">
-      <Router>
+      <HashRouter>
         {/*<Header />*/}
         <div className="pages">
           <Routes>
@@ -26,7 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-      </Router>
+      </HashRouter>
       <Footer />
     </main>
   );

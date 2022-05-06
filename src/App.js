@@ -16,20 +16,21 @@ function App() {
   return (
       <HashRouter>
     <main className="for_page">
+      <Routes>
       {/*<Router>*/}
         {/*<Header />*/}
         <div className="pages">
-          <Routes>
             <Route path="/" element={<MainContent />} />
             <Route path="/team" element={<Team />} />
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/career" element={<Career />} />
             <Route path="/contact" element={<Contact />} />
-          </Routes>
+
         </div>
       {/*</Router>*/}
       <Footer />
+      </Routes>
     </main>
       </HashRouter>
   );

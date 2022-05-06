@@ -52,7 +52,7 @@ function  GetServicesPages(props){
 function GetServicesItem(props) {
   return (
       <div className="content-block">
-        <img src={props.img}></img>
+        <img src={props.img} alt="img"></img>
         <h5>{props.about}</h5>
       </div>
   );

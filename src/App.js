@@ -10,9 +10,9 @@ import {Route,  Routes, HashRouter} from "react-router-dom";
 import Portfolio from "./component/Pages/Portfolio/Portfolio";
 import Contact from "./component/Pages/Contact/Contact";
 
-function App() {
+function App(props) {
   return (
-      <HashRouter>
+      <HashRouter basename="/joonline" >
           <main className="for_page">
               {/*<Header />*/}
               <div className="pages">

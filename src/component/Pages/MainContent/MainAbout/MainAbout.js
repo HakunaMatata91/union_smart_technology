@@ -54,7 +54,7 @@ class MainAbout extends Component {
                   Вакансии
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="btn btn-secondary btn-lg active"
                   role="button"
                   aria-pressed="true"

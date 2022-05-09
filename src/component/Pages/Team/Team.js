@@ -10,7 +10,6 @@ import team5 from "./img/team5.png";
 import team6 from "./img/team6.png";
 import team7 from "./img/team7.png";
 import team8 from "./img/team8.png";
-import bg from "./img/CTA_blockBG.png";
 import Header from "../../Header/Header";
 
 function GetTeamInfo(props) {

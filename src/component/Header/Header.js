@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import "./Header.scss";
 import logo from "./logo.png";
 import { MenuItems } from "./MenuItems";
-import { Link, Route, Router, Switch } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 class Header extends Component {
   state = { clicked: false };

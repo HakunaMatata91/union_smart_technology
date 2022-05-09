@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component} from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./MainFaq.scss";
 import plus from "./plus.svg";

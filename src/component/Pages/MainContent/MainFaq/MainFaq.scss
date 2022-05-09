@@ -1,6 +1,6 @@
 @import "../../../../styles/variable";
 .Faq{
-  font-family: 'Gotham';
+  font-family: 'Gotham', sans-serif;
   font-weight: 325;
   .Faq_content{
     padding: 110px 110px 135px 122px;
@@ -24,7 +24,7 @@
         font-size: 26px;
         line-height: 32px;
         color: #535670;
-        font-family: 'Gotham';
+        font-family: 'Gotham', sans-serif;
       }
       p{
         font-size: 18px;
@@ -132,7 +132,7 @@
     line-height: 22px;
   }
   .Faq .Faq_content .Faq_main p{
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;

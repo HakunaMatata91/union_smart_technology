@@ -1,4 +1,5 @@
 @import "../../styles/variable";
+//noinspection CssNoGenericFontName
 .footer{
   position: relative;
   background-color: $main-text;
@@ -181,7 +182,7 @@
 }
 @media screen and (max-width: 390px){
   .footer{
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
   }
   .footer .footer_contact{
     font-weight: 400;
@@ -195,7 +196,7 @@
     letter-spacing: 0.02em;
   }
   .footer .footer_item p{
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -205,7 +206,7 @@
     margin-bottom: 0;
   }
   .footer .footer_navigation .nav-link{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -227,7 +228,7 @@
     line-height: 14px;
   }
   .footer .footer_cookies a{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 11px;

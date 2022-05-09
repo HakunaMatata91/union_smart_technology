@@ -27,8 +27,9 @@
       }
     }
 
-    .nav-links {
-      font-family: "Gotham";
+//noinspection ALL
+.nav-links {
+      font-family: "Gotham", sans-serif;
       font-style: normal;
       font-weight: 325;
       font-size: 1em;
@@ -98,8 +99,9 @@
         background-color: $main-text;
         justify-content: center;
       }
-      .nav-menu li a{
-        font-family: 'Roboto';
+  //noinspection ALL
+  .nav-menu li a{
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;

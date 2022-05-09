@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { Col, Container, Nav,  Row } from "react-bootstrap";
 import "./Footer.scss";
 import linkedin from "../Pages/MainContent/MainContact/RegistrationForm/img/LinkedIn.svg";
 import google from "../Pages/MainContent/MainContact/RegistrationForm/img/Google.svg";
@@ -90,7 +90,8 @@ class Footer extends Component {
             </Col>
             <Col lg={6} md={12} xs={12}>
               <div className="footer_cookies">
-                <a href="Политика конфиденциальности">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a href="#">
                   Политика конфиденциальности
                 </a>
               </div>

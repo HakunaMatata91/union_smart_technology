@@ -4,6 +4,15 @@ import background from "./img/bg.png";
 import "./Main.scss";
 import Header from "../../../Header/Header";
 
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    /* you can also use 'auto' behaviour
+       in place of 'smooth' */
+  });
+};
+
 class Main extends Component {
   render() {
     return (
@@ -23,7 +32,8 @@ class Main extends Component {
                 </div>
               </div>
               <a
-                  href="/portfolio"
+                  onClick={scrollToTop}
+                  href="#/portfolio"
                   className="btn btn-primary3 btn-lg "
                   role="button"
                   aria-pressed="true"

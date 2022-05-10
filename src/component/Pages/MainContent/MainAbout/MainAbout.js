@@ -3,6 +3,15 @@ import { Col, Container, Row } from "react-bootstrap";
 import WhyUts from "./WhuUst.png";
 import "./MainAbout.scss";
 
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    /* you can also use 'auto' behaviour
+       in place of 'smooth' */
+  });
+};
+
 class MainAbout extends Component {
   render() {
     return (
@@ -46,7 +55,8 @@ class MainAbout extends Component {
               </div>
               <div className="about_button">
                 <a
-                  href="/career"
+                    onClick={scrollToTop}
+                  href="#/career"
                   className="btn btn-primary btn-lg "
                   role="button"
                   aria-pressed="true"

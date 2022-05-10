@@ -9,6 +9,15 @@ import prototipe from "./img/prototipe.svg";
 import design from "./img/design.svg";
 import arrow from "./img/arrow.svg";
 
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    /* you can also use 'auto' behaviour
+       in place of 'smooth' */
+  });
+};
+
 class MainOffers extends Component {
   render() {
     return (
@@ -88,7 +97,8 @@ class MainOffers extends Component {
             <Col lg={12} md={12} sm={12}>
               <div className="offers_button">
                 <a
-                  href="/services"
+                    onClick={scrollToTop}
+                  href="#/services"
                   className="btn btn-primary3 btn-lg "
                   role="button"
                   aria-pressed="true"

@@ -12,6 +12,15 @@ import team7 from "./img/team7.png";
 import team8 from "./img/team8.png";
 import Header from "../../Header/Header";
 
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    /* you can also use 'auto' behaviour
+       in place of 'smooth' */
+  });
+};
+
 function GetTeamInfo(props) {
   return (
     <div className="Team_group">
@@ -117,7 +126,8 @@ class Team extends Component {
                   <h3>Присоединяйтесь к нам</h3>
                   <div className="footer_button">
                     <a
-                      href="/career"
+                        onClick={scrollToTop}
+                      href="#/career"
                       className="btn btn-primary btn-lg "
                       role="button"
                       aria-pressed="true"

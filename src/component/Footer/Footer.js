@@ -6,8 +6,21 @@ import google from "../Pages/MainContent/MainContact/RegistrationForm/img/Google
 import facebook from "../Pages/MainContent/MainContact/RegistrationForm/img/Facebook.svg";
 import dribble from "../Pages/MainContent/MainContact/RegistrationForm/img/Dribbble.svg";
 import instagram from "../Pages/MainContent/MainContact/RegistrationForm/img/Instagram.svg";
+import {MenuItems} from "../Header/MenuItems";
+import {Link} from "react-router-dom";
 
-function GetCompanyAddress(props) {
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
+
+
+
+  function GetCompanyAddress(props) {
   return (
     <div className="footer_item">
       <h4>{props.name}</h4>
@@ -25,6 +38,12 @@ function GetCompanyAddress(props) {
 }
 
 class Footer extends Component {
+  state = { clicked: false };
+
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
+
   render() {
     return (
       <div className="footer">
@@ -48,12 +67,19 @@ class Footer extends Component {
             </Col>
             <Col xl={3} lg={3} md={12} sm={12} xs={12}>
               <div className="footer_navigation">
-                <Nav.Link href="#">Главная</Nav.Link>
-                <Nav.Link href="/team">Команда</Nav.Link>
-                <Nav.Link href="/services">Услуги</Nav.Link>
-                <Nav.Link href="/career">Карьера</Nav.Link>
-                <Nav.Link href="/portfolio">Портфолио</Nav.Link>
-                <Nav.Link href="/contact">Контакты</Nav.Link>
+                <nav>
+                  <ul className={this.state.clicked ? "nav-footer active" : "nav-footer"}>
+                    {MenuItems.map((item, index) => {
+                      return (
+                          <li key={index} onClick={scrollToTop}>
+                            <Link className={item.cName} to={item.url}>
+                              {item.title}
+                            </Link>
+                          </li>
+                      );
+                    })}
+                  </ul>
+                </nav>
               </div>
             </Col>
             {/*<Col xl={2} lg={2} md={6} sm={12} xs={6}>*/}

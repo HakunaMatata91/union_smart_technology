@@ -27,6 +27,15 @@ import serverDevelopment from "./img/serdevs.svg";
 import outsourcing from "./img/autsors.svg";
 import Header from "../../Header/Header";
 
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    /* you can also use 'auto' behaviour
+       in place of 'smooth' */
+  });
+};
+
 function  GetServicesAdditional(props){
   return(
       <div className="additional_block">
@@ -189,7 +198,8 @@ class Services extends Component {
                 </span>
                 <div className="Services_button">
                   <a
-                    href="/portfolio"
+                      onClick={scrollToTop}
+                    href="#/portfolio"
                     className="btn btn-primary4"
                     role="button"
                     aria-pressed="true"

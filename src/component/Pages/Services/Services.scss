@@ -163,7 +163,8 @@
     .services_additional {
       display: flex;
       flex-wrap: wrap;
-      .additional_block{
+    }
+    .additional_block{
         margin: 0 20px 30px 0;
         background: #ffff;
          img{
@@ -179,8 +180,6 @@
           padding-left: 10px;
         }
       }
-    }
-
   }
   }
 //Responsive Web Design - Media Queries
@@ -206,9 +205,6 @@
   }
   .Services .services__additional-info {
     margin-bottom: -50px;
-  }
-  .Services .services__additional-info .services_additional .additional_block {
-    margin: 0 19px 30px 0;
   }
   .Services .Services_info span{
     line-height: 22px;
@@ -263,9 +259,9 @@
   .Services .Services_carousel .react-multiple-carousel__arrow {
     top: 100px;
   }
-  .Services .services__additional-info .services_additional .additional_block{
-    margin-right: 8px;
-  }
+  //.Services .services__additional-info .services_additional .additional_block{
+  //  margin-right: 8px;
+  //}
 
   }
 @media screen and (max-width: 1140px){

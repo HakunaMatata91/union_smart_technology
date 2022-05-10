@@ -6,23 +6,23 @@ import MainContent from "./component/Pages/MainContent/MainContent";
 import Team from "./component/Pages/Team/Team";
 import Services from "./component/Pages/Services/Services";
 import Career from "./component/Pages/Career/Career";
-import {Route,  Routes, HashRouter} from "react-router-dom";
+import {Route, Routes, Router, HashRouter} from "react-router-dom";
 import Portfolio from "./component/Pages/Portfolio/Portfolio";
 import Contact from "./component/Pages/Contact/Contact";
 
 function App() {
   return (
-      <HashRouter >
+      <HashRouter>
           <main className="for_page">
               {/*<Header />*/}
               <div className="pages">
                   <Routes>
-                          <Route path="/" element={<MainContent />} />
-                          <Route path="/team" element={<Team />} />
-                          <Route path="/services" element={<Services />} />
-                          <Route path="/portfolio" element={<Portfolio />} />
-                          <Route path="/career" element={<Career />} />
-                          <Route path="/contact" element={<Contact />} />
+                      <Route exact path="/team" element={<Team />} />
+                      <Route exact path="/services" element={<Services />} />
+                      <Route exact path="/portfolio" element={<Portfolio />} />
+                      <Route exact path="/career" element={<Career />} />
+                      <Route exact  path="/contact" element={<Contact />} />
+                      <Route exact path="/" element={<MainContent />} />
                   </Routes>
               </div>
               <Footer />

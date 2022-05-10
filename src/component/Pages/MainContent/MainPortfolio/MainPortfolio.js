@@ -8,6 +8,15 @@ import offer4 from "./img/offer4.png";
 import offer5 from "./img/offer5.png";
 import offer6 from "./img/offer6.png";
 
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    /* you can also use 'auto' behaviour
+       in place of 'smooth' */
+  });
+};
+
 class MainPortfolio extends Component {
   render() {
     return (
@@ -75,7 +84,8 @@ class MainPortfolio extends Component {
             </Col>
             <div className="portfolio_button">
               <a
-                href="/portfolio"
+                  onClick={scrollToTop}
+                href="#/portfolio"
                 className="btn btn-primary btn-lg "
                 role="button"
                 aria-pressed="true"

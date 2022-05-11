@@ -260,17 +260,32 @@
     padding-left: 30px;
   }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 414px){
+
   .Career .career_description{
     padding-top: 20px;
   }
-  .Career .Career_footerMain span {
+  .Career .position {
+    padding-bottom: 15px;
+  }
+    .Career .Career_footerMain span {
     font-size: 14px;
   }
   .Career .Career_footerMain h3 {
     line-height: 41px;
   }
   .Career .Career_footer {
-    margin-bottom: 147px;
+    margin: 0 0 147px 0;
+  }
+  .Career .Career_footerMain{
+    margin-top: 100px;
+    padding: 0 0 500px 0;
+  }
+  .Career .Career_footerMain .CareerForm{
+    margin: 50px -12px;
+    padding: 20px;
+  }
+  .Career .Career_footerMain .CareerForm form{
+    width: 100%;
   }
   }
